@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+        <header>Technical Documentation Page</header>
+        <ul>
+            <li><a href="#Introduction_to_Java_Programming" class="nav-link">Introduction to Java Programming</a></li>
+            <li><a href="#Mathematical_Functions_Characters_and_Strings" class="nav-link">Mathematical Functions Characters and Strings</a></li>
+            <li><a href="#Elementary_Programming" class="nav-link">Elementary Programming</a></li>
+            <li><a href="#Loops" class="nav-link">Loops</a></li>
+            <li><a href="#Methods" class="nav-link">Methods</a></li>
+            <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+            <li><a href="#Objects_and_Classes" class="nav-link">Objects and classes</a></li>
+            <li><a href="#Inheritance_and_Polymorphism" class="nav-link">Inheritance and Polymorphism</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_Java_Programming">
+        <header>Introduction to Java Programming</header>
+        <div class="introduction-to-java">
+            <p>
+                This site is about programming. So, what is programming?
+                The term <i>programming</i> means to create (or develop)
+                software, which is also called a program. This site teaches you
+                how to create programs by using the Java <i>programming language</i>.
+            </p>
+            <p>
+                <i>Java is a a powerful and versatile programming language for developing software
+                running on mobile devices, desktop computers, and servers.</i>
+            </p>
+            <p>
+                Java syntax is defined in the Java language specification, and the Java library is
+                defined in the Java API. The JDK is the software for developing and running Java
+                programs. An IDE is an integrated development environment for rapidly developing
+                programs. The Java language specification is a technical definition of the Java programming
+                language's syntax and semantics. You can find the complete Java language specification at
+                <a href="http://docs.oracle.com/javase/specs/">http://docs.oracle.com/javase/specs/</a>.
+            </p>
+            <p>
+                You save a Java program in a .java file and compile it into a .class file. The .class file
+                is executed by the Java Virtual Machine. The Java language is a high-level language, but Java bytecode is a low-level
+                language. The bytecode is similar to machine instructions but is architecture neutral and can
+                run on any platform that has a Java Virtual Machine (JVM).
+            </p>
+        </div>
+      </section><hr>
+      <section
+        class="main-section"
+        id="Mathematical_Functions_Characters_and_Strings"
+      >
+        <header>Mathematical Functions Characters and Strings</header>
+        <div class="math-functions">
+            <p>
+                The focus of this chapter is to introduce mathematical functions, characters, string
+                objects, and use them to develop programs.
+                Java provides many useful methods in the Math class for performing common mathematical
+                functions.
+            </p>
+            <p>
+                Besides characters and strings, in java are six other data types(numeric):
+                <ul>
+                    <li>Byte</li>
+                    <li>Short</li>
+                    <li>Integer</li>
+                    <li>Long</li>
+                    <li>Float(Decimal number)</li>
+                    <li>Double(Decimal number)</li>        
+                </ul>
+            </p>
+            <p>
+                An if statement is a construct that enables a program to specify alternative paths of execution
+            </p>
+                The preceding program displays a message such as “6 + 2 = 7 is false.” If you wish the
+                message to be “6 + 2 = 7 is incorrect,” you have to use a selection statement to make this
+                minor change.
+                Java has several types of selection statements: one-way if statements, two-way if-else
+                statements, nested if statements, multi-way if-else statements, switch statements, and
+                conditional expressions.
+                A one-way if statement executes an action if and only if the condition is true. The syntax
+                for a one-way if statement is:
+                <br>
+                <code><br>
+                    if (boolean-expression) {<br>
+                        statement(s);<br>
+                        }<br>
+                </code><br>
+            <p>
+                A character data type represents a single character. In addition to processing numeric values, you can process characters in Java. The character
+                data type, char, is used to represent a single character. A character literal is enclosed in single
+                quotation marks. 
+                
+                <br>
+                Consider the following code: <code><br>
+                    char letter = 'A';<br>
+                    char numChar = '4';<br>
+                </code><br>
+                <i>A string is a sequence of characters</i>
+
+                The char type represents only one character. To represent a string of characters, use the data
+                type called String. For example, the following code declares message to be a string with
+                the value "Welcome to Java".
+                <br>
+                <code><br>
+                    String message = "Welcome to Java";<br>
+                </code><br>
+            </p>
+        </div>
+      </section><hr>
+      <section class="main-section" id="Elementary_Programming">
+        <header>Elementary Programming</header>
+        <div class="elementary-programming">
+            <p>
+                The focus of this chapter is on learning elementary programming techniques to solve
+                problems.<br>
+                Writing a program involves designing a strategy for solving the problem and then
+                using a programming language to implement that strategy.<br>
+                Let's first consider the simple problem of computing the area of a circle. How do we write a
+                program for solving this problem?<br>
+                Writing a program involves designing algorithms and translating algorithms into programming
+                instructions, or code. An algorithm describes how a problem is solved by listing
+                the actions that need to be taken and the order of their execution. Algorithms can help the
+                programmer plan a program before writing it in a programming language. Algorithms can be
+                described in natural languages or in pseudocode (natural language mixed with some programming
+                code). The algorithm for calculating the area of a circle can be described as follows:
+                <ul>
+                    <li>
+                        Read in the circle's radius.</li>
+                    <li>
+                        Compute the area using the following formula:
+                            <pre>   area = radius * radius * p</pre>
+                    </li>
+                    <li>
+                        Display the result.
+                    </li>
+                </ul>
+            </p>
+        </div>
+      </section><hr>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <div class="loops">
+            <p>
+                A loop can be used to tell a program to execute statements repeatedly.
+            </p>
+
+            <p>
+                Suppose that you need to display a string (e.g., Welcome to Java!) a hundred times. It
+                would be tedious to have to write the following statement a hundred times:
+                <pre>   
+                        System.out.println('Welcome to Java!');
+                        System.out.println('Welcome to Java!');
+                        System.out.println('Welcome to Java!');
+                                        .
+                                        .
+                                    100 times
+                                        .
+                        System.out.println('Welcome to Java!');
+                </pre>
+                Java provides a powerful construct called a loop that controls how many times an operation
+                or a sequence of operations is performed in succession. <br> Using a loop statement, you simply
+                tell the computer to display a string a hundred times without having to code the print statement
+                a hundred times, as follows:
+                <pre>
+                    <code>
+                        int count = 0;
+                        while (count < 100) {
+                            System.out.println("Welcome to Java!");
+                            count++;
+                        }
+                    </code>
+                </pre>
+            </p>
+        </div>
+      </section><hr>
+      <section class="main-section" id="Methods">
+        <header>Methods</header>
+        <div class="methods">
+            <p>
+                Methods can be used to define reusable code and organize and simplify coding.<br>
+                Suppose that you need to find the sum of integers from 1 to 10, from 20 to 37, and from 35
+                to 49, respectively. <br> You may write the code as follows:
+                <pre>
+                    <code>
+                        1   int sum = 0;
+                        2   for (int i = 1; i <= 10; i++)
+                        3       sum += i;
+                        4   System.out.println("Sum from 1 to 10 is " + sum);
+                        5   
+                        6   sum = 0;
+                        7   for (int i = 20; i <= 37; i++)
+                        8       sum += i;
+                        9   System.out.println("Sum from 20 to 37 is " + sum);
+                        10  
+                        11  sum = 0;    
+                        12  for (int i = 35; i <= 49; i++)
+                        13      sum += i;
+                        14  System.out.println("Sum from 35 to 49 is " + sum);
+                    </code>
+                </pre>
+            </p>
+
+            <p>
+                You may have observed that computing these sums from 1 to 10, from 20 to 37, and from
+                35 to 49 are very similar except that the starting and ending integers are different.<br>Wouldn't
+                it be nice if we could write the common code once and reuse it? We can do so by defining a
+                method and invoking it. <br>
+                The preceding code can be simplified as follows:
+                <pre>
+                    <code>
+                        1 public static int sum(int i1, int i2) {
+                        2       int result = 0;
+                        3       for (int i = i1; i <= i2; i++)
+                        4       result += i;
+                        5
+                        6       return result;
+                        7 }
+                        8
+                        9 public static void main(String[] args) {
+                        10      System.out.println("Sum from 1 to 10 is " + sum(1, 10));
+                        11      System.out.println("Sum from 20 to 37 is " + sum(20, 37));
+                        12      System.out.println("Sum from 35 to 49 is " + sum(35, 49));
+                        13 }
+                    </code>
+                </pre>
+            </p>
+        </div>
+      </section><hr>
+      <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+        <div class="arrays">
+            <p>
+                A single array variable can reference a large collection of data.
+                <br>
+                Once an array is created, its size is fixed. An array reference variable is used to
+                access the elements in an array using an index.
+            </p>
+            <p>
+                To use an array in a program, you must declare a variable to reference the array and specify
+                the array's element type.<br>Here is the syntax for declaring an array variable:
+                <pre>
+                    <code>
+                        elementType[] arrayRefVar;
+                    </code>
+                </pre>
+            </p>
+        </div>
+      </section><hr>
+      <section class="main-section" id="Objects_and_Classes">
+        <header>Objects and classes</header>
+      </section><hr>
+      <section class="main-section" id="Inheritance_and_Polymorphism">
+        <header>Inheritance and Polymorphism</header>
+      </section><hr>
+    </main>
+  </body>
+</html>
